@@ -45,6 +45,7 @@ This document is constructed from the results of a poll across the Python Team. 
   from .sub_package import magic_beans
   ```
 - Don't use single letter variable names, unless within a list comprehension.
+- Never put any code in the `__init__.py` of a module (except namespace stitching imports).
 
 
 ### Exceptions

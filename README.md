@@ -11,6 +11,7 @@ This document is constructed from the results of a poll across the Python Team. 
 5. [Code Organisation](#code-organisation)
 6. [Python Packaging](#python-packaging)
 7. [Design](e#design)
+8. [Pull requests](#pull-requests)
 
 
 ### Documentation
@@ -68,3 +69,16 @@ This document is constructed from the results of a poll across the Python Team. 
 ### Design
 
 - Use Abstract Base Classes to enforce conventions in your projects, where it makes sense.
+
+### Pull requests
+
+- When merging a pull request, please squash and use the following message template:
+
+```Context:
+Why this PR was needed
+
+Solution:
+What you implemented
+
+Tests:
+How your solution is tested (if applicable)```

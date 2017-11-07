@@ -74,7 +74,8 @@ This document is constructed from the results of a poll across the Python Team. 
 
 - When merging a pull request, please squash and use the following message template:
 
-```Context:
+```
+Context:
 Why this PR was needed
 
 Solution:

@@ -84,3 +84,5 @@ What you implemented
 Tests:
 How your solution is tested (if applicable)
 ```
+
+[Github suggests a way](https://github.com/blog/2111-issue-and-pull-request-templates) to define a template per project for pull requests and issues. Ensure your project uses it.

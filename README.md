@@ -94,15 +94,15 @@ How your solution is tested (if applicable)
 
 An API endpoint will usually return some data (if the request succeeded without errors) or an error (possibly including some additional details such as a description other than the error identifier).
 
-The way the data and the errors are returned can either be as a list:
+The way the data and the errors are returned can either be as a tuple:
 
 `return data, error`
 
-or as a map:
+or as a dict:
 
 `return {'data': data, 'error': error}`
 
-Returning as a list ensures order is maintained. The receiver must be aware of the order when unpacking.
-Returning as a map allows more keys to be added at a later date without resulting in a breaking change in the receiving code.
+Returning as a tuple ensures order is maintained. The receiver must be aware of the order when unpacking.
+Returning as a dict allows more keys to be added at a later date without resulting in a breaking change in the receiving code.
 
-Since we don't care about the order for the API response, which is composed of data and error, the simpler returning of a map should be used. This principle applies for any of the nested values being consumed by the calling service. `data` should also be a map.
+Since we don't care about the order for the API response, which is composed of data and error, the simpler returning of a dict should be used. This principle applies for any of the nested values being consumed by the calling service. `data` should also be a dict.
